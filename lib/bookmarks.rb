@@ -15,7 +15,7 @@ class Bookmarks
   end
 
   def all
-     @bookmark_list.join
+     @bookmark_list.join(" ")
   end
 
 end
