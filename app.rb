@@ -11,11 +11,6 @@ class BookmarkManager < Sinatra::Base
     erb :index
   end
 
-  # post '/load-bookmarks' do
-  #   @bookmarks = Bookmarks.new
-  #   @bookmarks = bookmarks.all
-  #   redirect '/bookmarks'
-  # end
 
   get '/bookmarks' do
     @bookmarks = Bookmarks.new.all
