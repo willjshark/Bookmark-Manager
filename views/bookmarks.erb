@@ -1,17 +1,17 @@
 <ul>
-<% @bookmarks.each do |x|%>
+<% @bookmark_title.each do |x|%>
 <li>
-<%= x %>
+<a href= <%=y%>> <%= x %> </a>
 </li>
+<%end%>
 <%end%>
 </ul>
 <form action="/new_bookmark" method="post">
-    <ul>
-        <li>
+  
+            <input type="text" name="bookmark_title">
+
             <input type="text" name="bookmarkURL">
-        </li>
-        <li>
+        
             <input type="submit" value="Submit">
-        </li>
-    </ul>
+    
 </form>
