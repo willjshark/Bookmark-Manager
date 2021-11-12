@@ -1,10 +1,10 @@
 <ul>
-<% @bookmark_title.each do |x|%>
+<% @bookmarks.each do |x|%>
 <li>
-<a href= <%=y%>> <%= x %> </a>
+<a href= <%=x.url%>> <%= x.title %> </a>
 </li>
 <%end%>
-<%end%>
+
 </ul>
 <form action="/new_bookmark" method="post">
   
